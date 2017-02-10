@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aluno:</strong>
+  <%= @aluno_turma.aluno.name %>
+</p>
+
+<p>
+  <strong>Turma:</strong>
+  <%= @aluno_turma.turma.name %>
+</p>
+
+<p>
+  <strong>Número de Faltas:</strong>
+  <%= @aluno_turma.numfaltas %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_aluno_turma_path(@aluno_turma) %> |
+<%= link_to 'Back', aluno_turmas_path %>

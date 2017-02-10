@@ -1,0 +1,92 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+Em uma eleição presidencial, existem quatro candidatos. Os votos são informados através de código. Os códigos utilizados são:  
+1,2,3,4 votos para os respectivos candidatos;  5 voto nulo;  6 voto em branco.  
+Escreva uma Programa que calcule e imprima:  
+• total de votos para cada candidato;  • total de votos nulos;  • total de votos em branco;  • porcentagem de votos nulos sobre o total de votos;  • porcentagem de votos em branco sobre o total de votos.  
+Para finalizar o conjunto de votos, tem-se o valor zero.   
+
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int voto, cand1 = 0, cand2 = 0, cand3 = 0, cand4 = 0, nulo = 0, branco = 0, total = 0;
+            Console.WriteLine("Informe o seu voto:");
+            voto = Convert.ToInt32(Console.ReadLine());
+            while (voto != 0)
+            {
+            switch (voto)
+                {
+                    case 1:
+                        {
+                            cand1++;
+                            total++;
+                            break;
+                        }
+                    case 2:
+                        {
+                            cand2++;
+                            total++;
+                            break;
+                        }
+                    case 3:
+                        {
+                            cand3++;
+                            total++;
+                            break;
+                        }
+
+                    case 4:
+                        {
+
+                            cand4++;
+                            total++;
+                            break;
+                        }
+
+                    case 5:
+                        {
+
+                            nulo++;
+                            total++;
+                            break;
+                        }
+
+                    case 6:
+                        {
+
+                            branco++;
+                            total++;
+                            break;
+                        }
+                    default:
+                        {
+                            Console.WriteLine("Digite um valor válido meu filho!");
+                            break;
+                        }
+                }
+            
+            Console.WriteLine("Informe o seu voto:");
+            voto = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("O total de votos foi:");
+            Console.WriteLine("Candidato 1 - " + cand1 + "\nCandidato 2 - " + cand2 + "\nCandidato 3 - " + cand3 + "\nCandidato 4 - " + cand4 + "\nNulo - " + nulo + "\nBranco - " + branco);
+            Console.WriteLine("A porcentagem de votos em nulo sobre o total de votos foi " + (float)nulo / total * 100 + " %");
+            Console.WriteLine("A porcentagem de votos em branco sobre o total de votos foi " + (float)branco / total * 100 + " %");
+            Console.ReadKey();
+        }
+    }
+}
+

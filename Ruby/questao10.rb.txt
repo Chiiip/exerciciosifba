@@ -1,0 +1,19 @@
+puts "Digite o nome do time 1"
+time1 = gets
+puts "Digite a quantidade de gols do time 1"
+gol1 = gets
+puts "Digite o nome do time 2"
+time2 = gets
+puts "Digite a quantidade de gols do time 2"
+gol2 = gets
+
+
+if (gol1 > gol2)
+puts time1
+end
+if (gol1 < gol2)
+puts time2
+end
+
+puts "Aperte Enter para finalizar o programa"
+fim = gets

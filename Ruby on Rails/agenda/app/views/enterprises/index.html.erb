@@ -1,0 +1,47 @@
+<h1>Listing enterprises</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fantasyname</th>
+      <th>Address</th>
+      <th>Fone</th>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enterprises.each do |enterprise| %>
+      <tr>
+        <td><%= enterprise.fantasyname %></td>
+        <td><%= enterprise.address %></td>
+        <td><%= enterprise.fone %></td>
+        <td><%= enterprise.obs %></td>
+        <td><%= link_to 'Show', enterprise %></td>
+        <td><%= link_to 'Edit', edit_enterprise_path(enterprise) %></td>
+        <td><%= link_to 'Destroy', enterprise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<h1>
+<th>Pesquisa</th></h1>
+
+<%= form_tag('/buscar') do %>
+<%= text_field_tag 'search' %>
+<%= submit_tag 'Pesquisar' %>
+    <% end %>
+
+
+
+
+
+
+<br>
+
+<%= link_to 'New Enterprise', new_enterprise_path %>

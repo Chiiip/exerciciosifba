@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+/*
+
+ Faça uma Programa que receba a idade e o peso de 15 pessoas. Calcule e imprima as médias dos pesos das pessoas da mesma faixa etária. As faixas etárias são: de 1 a 10 anos, de 11 a 20 anos, de 21 a 30 anos e maiores de 30 anos.  
+ 
+
+*/
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, cont10 = 0, cont20 = 0, cont30 = 0, cont31 = 0;
+            double peso, soma10 = 0, soma20 = 0, soma30 = 0, soma31 = 0; ;
+            
+
+            for (int cont = 1; cont < 15; cont++) {
+                Console.WriteLine("Informe a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Informe o seu peso:");
+                peso = Convert.ToDouble(Console.ReadLine());
+            
+           
+                
+
+                switch (idade)
+                {
+                    case 1: case 2: case 3:case 4: case 5: case 6:case 7:case 8: case 9: case 10:
+                        {
+                            soma10 += peso;
+                            cont10++;
+                            break;
+                        }
+
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                    case 15:
+                    case 16:
+                    case 17:
+                    case 18:
+                    case 19:
+                    case 20:
+                        {
+                            soma20 += peso;
+                            cont20++;
+                            break;
+                        }
+
+                    case 21:
+                    case 22:
+                    case 23:
+                    case 24:
+                    case 25:
+                    case 26:
+                    case 27:
+                    case 28:
+                    case 29:
+                    case 30:
+                        {
+                            soma30 += peso;
+                            cont30++;
+                            break;
+                        }
+
+                    case 31:
+                        {
+                            soma31 += peso;
+                            cont31++;
+                            break;
+                        }
+                    default:
+                        {
+                            soma31 += peso;
+                            cont31++;
+                            break;
+                        }
+
+
+                }
+            }
+
+            Console.WriteLine("A porcentagem de audiência é:");
+           
+
+        }
+    }
+}

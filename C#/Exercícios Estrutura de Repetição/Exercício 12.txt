@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Cada espectador de um cinema respondeu a um questionário no qual constava sua idade e a sua opinião em relação ao filme: ótimo - 3, bom - 2, regular - 1.  
+Faça uma Programa que receba a idade e a opinião de 15 espectadores, calcule e imprima:  
+• a média das idades das pessoas que responderam ótimo;  • a quantidade de pessoas que responderam regular;  • a porcentagem de pessoas que responderam bom entre todos os espectadores analisados. 
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, avaliacao, otimo = 0, bom = 0, regular = 0, total = 0, somaotimo = 0;
+            for (int cont = 1; cont<=15; cont++)
+            {
+                Console.WriteLine("Informe a sua idade");
+                idade = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Qual sua opinião sobre o filme: ");
+                avaliacao = Convert.ToInt32(Console.ReadLine());
+                if (avaliacao == 3)
+                {
+                    somaotimo += idade;
+                    otimo++;
+                }
+                else if (avaliacao == 2)
+                {
+                    bom++;
+                }
+                else if (avaliacao == 1)
+                {
+                    regular++;
+                }
+                total++;
+            }
+            Console.WriteLine("A média das idades das pessoas que responderam ótimo foi " + (float) somaotimo/otimo);
+            Console.WriteLine("A quantidade de pessoas que respondeu regular foi " + regular);
+            Console.WriteLine("A porcentagem de pessoas que responderam bom entre todos foi " + (float)bom/total*100 + " %");
+            Console.ReadKey();
+
+        }
+
+    }
+}

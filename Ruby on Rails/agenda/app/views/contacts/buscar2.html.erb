@@ -1,0 +1,25 @@
+<table>
+ <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+    </tr>
+      <tr>
+        <td><%= contact.email %></td>
+          </tr>
+          	  <tr>
+        <td><%= contact.fone %></td>
+          </tr>
+          	  <tr>
+        <td><%= contact.address %></td>
+          </tr>
+          	  <tr>
+        <td><%= contact.obs %></td>
+  </tr>
+  	  <tr>
+  	  	<td>===============================================================</td>
+  	  	  </tr>
+
+<% end %>
+
+
+</table>

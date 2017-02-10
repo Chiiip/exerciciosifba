@@ -1,0 +1,23 @@
+<table>
+ <% @turmas.each do |turma| %>
+      <tr>
+        <td><%= turma.name %></td>
+    </tr>
+      <tr>
+        <td><%= turma.professor.name %></td>
+          </tr>
+          	  <tr>
+        <td><%= turma.numeroalunos %></td>
+          </tr>
+           <tr>
+        <td><%= turma.curso.name %></td>
+    </tr>
+  	  <tr>
+  	  	<td>===============================================================</td>
+  	  	  </tr>
+
+<% end %>
+
+
+</table>
+<%= link_to 'Back', turmas_path %>

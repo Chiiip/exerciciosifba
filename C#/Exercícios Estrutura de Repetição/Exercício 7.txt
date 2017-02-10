@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa para calcular N! (fatorial de N), sendo que o valor inteiro de N é fornecido pelo usuário.  
+Sabe-se que: N! = 1 * 2 * 3 *... * (N-1) * N;                       0! = 1, por definição.  
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, resultado = 1;
+            Console.WriteLine("Informe o número para calcular fatorial:");
+            num = Convert.ToInt32(Console.ReadLine());
+            for (int cont = 1; cont<= num; cont++)
+            {
+                resultado = resultado * cont;
+            }
+            Console.WriteLine("O resultado da fatorial é " + resultado);
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa que receba 10 números inteiros e imprima a quantidade de números primos dentre os números que foram digitados.  
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, contprimos = 0, valorprimo = 0;
+            for (int cont = 1; cont<=10; cont++)
+            {
+                Console.WriteLine("Informe o número para verificar se é primo:");
+                valorprimo = 0;
+                num = Convert.ToInt32(Console.ReadLine());
+                for (int cont2 = 1; cont2<= num; cont2++)
+                {
+                if (num%cont2 == 0)
+                    {
+                        valorprimo++;
+                    }
+                }
+
+                if (valorprimo <=2)
+                {
+                    contprimos++;
+                }
+
+            }
+            Console.WriteLine("A quantidade de números primos é " + contprimos);
+            Console.ReadKey();
+        }
+    }
+}

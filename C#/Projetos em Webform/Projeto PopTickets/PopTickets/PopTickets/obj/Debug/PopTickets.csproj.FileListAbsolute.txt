@@ -1,0 +1,47 @@
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\aluno\documents\visual studio 2010\Projects\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\bin\PopTickets.dll.config
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets\PopTickets\PopTickets\bin\MySql.Data.dll
+C:\Users\aluno\Downloads\PopTickets (1)\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\aluno\Downloads\PopTickets (1)\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\aluno\Downloads\PopTickets (1)\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\PopTickets (1)\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\aluno\Downloads\PopTickets (1)\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\bin\PopTickets.dll.config
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\bin\MySql.Data.dll
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets(1)\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\bin\PopTickets.dll.config
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\Josivete\Desktop\PopTicketsPedro\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\aluno\Documents\PopTicketsFinal1\PopTicketsPedro\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\aluno\Documents\PopTicketsFinal1\PopTicketsPedro\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\aluno\Documents\PopTicketsFinal1\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\PopTicketsFinal1\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\aluno\Documents\PopTicketsFinal1\PopTicketsPedro\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\bin\PopTickets.dll.config
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\bin\MySql.Data.dll
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\Simoneide\Downloads\PopTickets MAIS ATUALIZADO 06-12\PopTickets\PopTickets\obj\Debug\PopTickets.pdb
+C:\Users\aluno\Downloads\PopTicketsULTIMO\PopTickets\PopTickets\bin\PopTickets.dll
+C:\Users\aluno\Downloads\PopTicketsULTIMO\PopTickets\PopTickets\bin\PopTickets.pdb
+C:\Users\aluno\Downloads\PopTicketsULTIMO\PopTickets\PopTickets\obj\Debug\PopTickets.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Downloads\PopTicketsULTIMO\PopTickets\PopTickets\obj\Debug\PopTickets.dll
+C:\Users\aluno\Downloads\PopTicketsULTIMO\PopTickets\PopTickets\obj\Debug\PopTickets.pdb

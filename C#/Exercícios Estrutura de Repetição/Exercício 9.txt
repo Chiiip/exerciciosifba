@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+/*
+
+ Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça uma Programa que calcule e escreva:  
+• a maior e a menor altura do grupo;  • a média de altura das mulheres;  • número de homens. 
+
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int maior = 0, menor = 0;
+            int somaalturasM = 0, altura;
+            char sexo;
+            int contm = 0, contf = 0 ;
+            for (int cont = 1; cont <= 15; cont++)
+            {
+                Console.WriteLine("Insira o seu sexo, M ou F:");
+                sexo = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Insira a sua altura:");
+                altura = Convert.ToInt32(Console.ReadLine());
+
+                if (sexo == 'M')
+                      contm++;
+                if (sexo.ToUpper() == 'F')
+                {
+                    contf++;
+                    somaalturasM += altura;
+                }
+
+                if (cont == 1)
+                {
+                    maior = altura;
+                    menor = altura;
+                }
+                
+                    if (altura > maior) {
+                        maior = altura;
+                    
+                    }
+                    if (altura < menor)
+                    {
+                        menor = altura;
+                    }
+                }
+
+                
+
+            Console.WriteLine("A maior altura é " + maior + " e a menor altura é " + menor);
+            if (contf!=0)
+            Console.WriteLine("A média de altura das mulheres é " + somaalturasM / contf);
+            Console.WriteLine("O número de homens é " + contm);
+            
+        }
+    }
+}

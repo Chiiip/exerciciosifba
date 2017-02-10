@@ -1,0 +1,78 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+/*
+
+Foi feita uma pesquisa de audiência de canal de TV em várias casas de uma certa cidade, em um determinado dia. Para cada casa visitada foi fornecido o número do canal (4, 5, 7, 12) e o número de pessoas que estavam assistindo a ele naquela casa. Se a televisão estivesse desligada, nada seria anotado, ou seja, esta casa não entraria na pesquisa. Faça uma Programa que:  
+leia um número indeterminado de dados, isto é, o número do canal e o número de pessoas que estavam assistindo;  
+calcule e imprima a porcentagem de audiência em cada canal. Para encerrar a entrada de dados, digite o número do canal zero. 
+
+*/
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numcanal, total = 0, num4 = 0, num5 = 0, num7 = 0, num12 = 0;
+            
+            Console.WriteLine("Informe o número do canal:");
+            numcanal = Convert.ToInt32(Console.ReadLine());
+            while (numcanal != 0)
+            {
+                
+
+                switch (numcanal)
+                {
+                    case 4:
+                        {
+                            num4++;
+                            total++;
+                            break;
+                        }
+
+                    case 5:
+                        {
+                            num5++;
+                            total++;
+                            break;
+                        }
+
+                    case 7:
+                        {
+                            num7++;
+                            total++;
+                            break;
+                        }
+
+                    case 12:
+                        {
+                            num12++;
+                            total++;
+                            break;
+                        }
+                    default:
+                        {
+
+                            break;
+                        }
+
+
+                }
+
+
+
+
+                Console.WriteLine("Informe o número do canal:");
+                numcanal = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("A porcentagem de audiência é:");
+            Console.WriteLine("Canal 4 - " + (float)num4 / total * 100 + "% \nCanal 5 - " + (float)num5 / total * 100 + "% \nCanal 7 - " + (float)num7 / total * 100 + "% \nCanal 12 - " + (float) num12 / total * 100 + "%");
+
+        }
+    }
+}

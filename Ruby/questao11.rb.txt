@@ -1,0 +1,19 @@
+puts "Informe a quantidade de eleitores"
+quantidade = gets.to_f
+puts "Informe a porcentagem de votos do Candidato 1"
+porc1 = gets.to_f 
+puts "Informe a porcentagem de votos do Candidato 2"
+porc2 = gets.to_f 
+puts "Informe a porcentagem de votos do Candidato 3"
+porc3 = gets.to_f 
+puts "A quantidade de votos para cada candidato foi:"
+
+votos1 = porc1*quantidade/100
+votos2 = porc2*quantidade/100
+votos3 = porc3*quantidade/100
+
+puts votos1 
+puts votos2  
+puts votos3  
+
+fim = gets

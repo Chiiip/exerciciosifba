@@ -1,0 +1,10 @@
+C:\Users\aluno\documents\visual studio 2010\Projects\SiteNoticias\SiteNoticias\bin\SiteNoticias.dll
+C:\Users\aluno\documents\visual studio 2010\Projects\SiteNoticias\SiteNoticias\bin\SiteNoticias.pdb
+C:\Users\aluno\documents\visual studio 2010\Projects\SiteNoticias\SiteNoticias\obj\Debug\SiteNoticias.csprojResolveAssemblyReference.cache
+C:\Users\aluno\documents\visual studio 2010\Projects\SiteNoticias\SiteNoticias\obj\Debug\SiteNoticias.dll
+C:\Users\aluno\documents\visual studio 2010\Projects\SiteNoticias\SiteNoticias\obj\Debug\SiteNoticias.pdb
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\SiteNoticias Karine e Pedro 05-09-2016\SiteNoticias\obj\Debug\SiteNoticias.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\SiteNoticias Karine e Pedro 05-09-2016\SiteNoticias\obj\Debug\SiteNoticias.dll
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\SiteNoticias Karine e Pedro 05-09-2016\SiteNoticias\bin\SiteNoticias.dll
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\SiteNoticias Karine e Pedro 05-09-2016\SiteNoticias\bin\SiteNoticias.pdb
+C:\Users\aluno\Documents\Visual Studio 2010\Projects\SiteNoticias Karine e Pedro 05-09-2016\SiteNoticias\obj\Debug\SiteNoticias.pdb

@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa que receba a idade de 15 pessoas, calcule e imprima:  
+a quantidade de pessoas em cada faixa etária; a porcentagem de cada faixa etária em relação ao total de pessoas.  
+As faixas etárias são      
+1 a 15 anos   
+16 a 30 anos   
+31 a 45 anos   
+46 a 60 anos   
+> = 61 anos  
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, faixa1 = 0, faixa2 = 0, faixa3 = 0, faixa4 = 0, faixa5 = 0;
+            
+            for (int cont = 1; cont<=15; cont++)
+            {
+                Console.WriteLine("Insira a sua idade: ");
+                idade = Convert.ToInt32(Console.ReadLine());
+
+                if (idade >= 1 && idade <= 15)
+                {
+                    faixa1++;
+                }
+                else if (idade > 15 && idade <= 30)
+                {
+                    faixa2++;
+                }
+                else if (idade > 30 && idade <= 45)
+                {
+                    faixa3++;
+                }
+                else if (idade> 45 && idade <= 60)
+                {
+                    faixa4++;
+                }
+                else if (idade > 60)
+                {
+                    faixa5++;
+                }
+            }
+
+            Console.WriteLine("A porcentagem de cada faixa etária em relação ao total é:");
+            Console.WriteLine("1 a 15 anos - " + (float) faixa1/15*100 + "%\n16 a 30 anos - " + (float) faixa2/15*100 + "%");
+            Console.WriteLine("31 a 45 anos - " + (float)faixa3/15 * 100 + "%\n46 a 60 anos - " + (float)faixa4/15 * 100 + "%\nAcima de 60 anos - " + (float) faixa5/15*100);
+            Console.ReadKey();
+        }
+    }
+}

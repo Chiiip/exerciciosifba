@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+Faça uma Programa que receba a idade, o peso e o sexo de 10 pessoas. Calcule e impnma:  
+• total de homens;  • total de mulheres;  • média das idades dos homens;  • média dos pesos das mulheres. 
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, contm = 0, contf = 0;
+            double peso, somaidade = 0, somapeso = 0;
+            char sexo;
+
+            for (int cont = 0; cont<10; cont++)
+            {
+                Console.WriteLine("Informe a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Informe o seu peso:");
+                peso = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Informe o seu sexo, M ou F:");
+                sexo = Convert.ToChar(Console.ReadLine());
+
+                if (sexo == 'M' || sexo == 'm'){
+                    contm++;
+                    somaidade += idade; 
+                }
+                else if (sexo =='F' || sexo == 'f')
+                {
+                    contf++;
+                    somapeso += peso;
+                }
+
+            }
+            Console.WriteLine("O número de homens é " + contm + " e o número de mulheres é " + contf);
+            Console.WriteLine("A média de idade dos homens é " + (float) somaidade/contm);
+            Console.WriteLine("A média dos pesos das mulheres é " + (float)somapeso/contf);
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<nav>
+	<ul>
+		<h3> Seja bem-vindo, <%= current_professor.name %> </h3>
+		<li><%= link_to t('layout.Meu_Perfil'), professor_path(current_professor) %></li>
+		<li><%= link_to t('layout.Novo_Curso'), new_curso_path %> </li>
+		<li><%= link_to t('layout.Nova_Turma'), new_turma_path %> </li>
+		<li><%= link_to t('layout.Minhas_Turmas'), turmas_path %> </li>
+		<li>
+			<%= link_to t('layout.signout'), professor_sessions_path, method: :delete  %>
+		</li>
+	</ul>
+</nav>			

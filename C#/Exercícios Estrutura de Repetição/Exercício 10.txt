@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+/*
+
+Uma empresa decidiu fazer um levantamento em relação aos candidatos que se apresentarem para preenchimento de vagas no seu quadro de funcionários. Supondo que você seja o programador dessa empresa, faça uma Programa que leia para cada candidato a idade, o sexo (M ou F) e a experiência no serviço (S ou N). Para encerrar a entrada de dados, digite zero para a idade. Calcule e escreva:  
+• número de candidatos do sexo feminino; • número de candidatos do sexo masculino;  • a idade média dos homens que já têm experiência no serviço;  • a porcentagem dos homens com mais de 45 anos entre o total dos homens;  • número de mulheres com idade inferior a 35 anos e com experiência no serviço;  • a menor idade entre as mulheres que já têm experiência no serviço.  
+
+*/
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int somaidadeexp = 0, idade, contexp=0, menoridade = 0, contexpf = 0;
+            char sexo, exp;
+            int contm = 0, contf = 0, cont45m = 0, cont35f = 0;
+            
+                
+                Console.WriteLine("Insira a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+                while (idade != 0)
+                {
+                    Console.WriteLine("Insira o seu sexo, M ou F:");
+                    sexo = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine("Você tem experiência no serviço? Responda com S ou N:");
+                    exp = Convert.ToChar(Console.ReadLine());
+
+                    if (sexo == 'M')
+                    {
+                        if (idade > 45)
+                        cont45m++;
+                        contm++;
+                        if (exp == 'S')
+                        {
+                            contexp++;
+                            somaidadeexp += idade;
+                        }
+                    }
+
+                    
+                    else
+                    {
+                        contf++;
+                            
+                        if (exp == 'S')
+                        {
+                            if (contexpf == 0)
+                                menoridade = idade;
+
+                            if (menoridade > idade)
+                                menoridade = idade;
+
+                            {
+                                if (idade < 35)
+                                    cont35f++;
+                            }
+
+
+
+                            
+                            contexpf++;
+                        }
+                    }
+
+
+                    Console.WriteLine("Insira a sua idade:");
+                    idade = Convert.ToInt32(Console.ReadLine());
+                }
+
+                Console.WriteLine("O número de candidatos do sexo feminino é " + contf);
+                Console.WriteLine("O número de candidatos do sexo masculino é " + contm);
+                Console.WriteLine("A idade média dos homens que já tem experiência no serviço é " + somaidadeexp / contexp);
+                Console.WriteLine("A porcentagem de homens com mais de 45 anos entre o total dos homens é " + (float) cont45m/contm*100 + "%");
+                Console.WriteLine("O número de mulheres com idade inferior a 35 anos e com experiência no serviço é " + cont35f);
+                Console.WriteLine("A menor idade entre as mulheres que já tem experiência no serviço é " + menoridade);
+        }
+    }
+}

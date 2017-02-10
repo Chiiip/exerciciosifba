@@ -1,0 +1,32 @@
+<%= form_for(@aluno_turma) do |f| %>
+  <% if @aluno_turma.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aluno_turma.errors.count, "error") %> prohibited this aluno_turma from being saved:</h2>
+
+      <ul>
+      <% @aluno_turma.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :numfaltas %><br>
+    <%= f.number_field :numfaltas %>
+  </div>
+
+  <div class="field">
+    <%= f.select :aluno_id, Aluno.all.collect {|p| [p.name, p.id]}%>
+  </div>
+
+  <div class="field">
+    <%= f.select :turma_id, Turma.all.collect {|p| [p.name, p.id]}%>
+  </div>
+
+
+  <div class="actions">
+
+    <%= f.submit %>
+  </div>
+<% end %>

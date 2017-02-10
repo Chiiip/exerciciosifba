@@ -1,0 +1,20 @@
+<table>
+ <% @admins.each do |admin| %>
+      <tr>
+        <td><%= admin.name %></td>
+    </tr>
+      <tr>
+        <td><%= admin.phone %></td>
+          </tr>
+          	  <tr>
+        <td><%= admin.email %></td>
+          </tr>
+  	  <tr>
+  	  	<td>===============================================================</td>
+  	  	  </tr>
+
+<% end %>
+
+
+</table>
+<%= link_to 'Back', admins_path %>

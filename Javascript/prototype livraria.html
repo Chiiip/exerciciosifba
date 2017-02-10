@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//WDC/DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1DTD/xhtml1-transitional.dtd">
+	<html xmlns="http:www.w3.org/1999/xhtml">
+	<head>
+		<title>Prototype em Javascript</title>
+	</head>
+	<body>
+<script>
+function Livraria(isbn, titulo, autor, edicao)
+{
+	this.isbn = isbn;
+	this.titulo = titulo;
+	this.autor = autor;
+	this.edicao = edicao;
+}
+
+Livraria.prototype.getISBN=function()
+{
+return this.isbn;
+}
+Livraria.prototype.setISBN=function(isbn)
+{
+	this.isbn = isbn;
+}
+
+Livraria.prototype.getTitulo=function()
+{
+return this.titulo;
+}
+Livraria.prototype.setTSBN=function(titulo)
+{
+	this.titulo = titulo;
+}
+
+Livraria.prototype.getAutor=function()
+{
+return this.autor;
+}
+Livraria.prototype.setAutor=function(autor)
+{
+	this.autor = autor;
+}
+
+Livraria.prototype.getEdicao=function()
+{
+return this.edicao;
+}
+Livraria.prototype.setEdicao=function(edicao)
+{
+	this.edicao = edicao;
+}
+
+var primeiro_livro = new Livraria("85-7593-486-7", "Dominando Eclipse", "Edson", "1ª Edição");
+document.write("O primeiro livro é" + primeiro_livro.getTitulo() + "<br />");
+</script>
+
+</body>
+</html>

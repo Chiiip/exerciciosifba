@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa que receba a idade de 10 pessoas, calcule e imprima a quantidade de pessoas maiores de idade (idade >= 18 anos). 
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int contmaior = 0, idade;
+
+            for (int cont = 1; cont < 10; cont++)
+            {
+                Console.WriteLine("Informe a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+                if (idade >= 18)
+                {
+                    contmaior++;
+                }
+            }
+            Console.WriteLine("O número de pessoas maiores de idade é " + contmaior);
+            Console.ReadKey();
+        }
+    }
+}

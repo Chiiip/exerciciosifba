@@ -1,0 +1,11 @@
+puts "Informe o nome"
+nome = gets
+puts "Informe um numero"
+n = gets.to_i
+
+cont = 1
+
+while cont<=n do
+puts nome + "\n"
+cont = cont + 1
+end

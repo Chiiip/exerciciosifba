@@ -1,0 +1,29 @@
+<h1>Listing aluno_turmas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aluno</th>
+      <th>Turma</th>
+      <th>Número de faltas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aluno_turmas.each do |aluno_turma| %>
+      <tr>
+        <td><%= aluno_turma.aluno.name %></td>
+        <td><%= aluno_turma.turma.name %></td>
+        <td><%= aluno_turma.numfaltas %></td>
+        <td><%= link_to 'Show', aluno_turma %></td>
+        <td><%= link_to 'Edit', edit_aluno_turma_path(aluno_turma) %></td>
+        <td><%= link_to 'Destroy', aluno_turma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aluno turma', new_aluno_turma_path %>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//WDC/DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1DTD/xhtml1-transitional.dtd">
+	<html xmlns="http:www.w3.org/1999/xhtml">
+	<head>
+		<title>Functions</title>
+	</head>
+	<script>
+	function seuNome(nome){
+
+		if(nome!="" &&nome!=undefined)
+			alert("Seja bem vindo " +nome);
+		else
+			alert("Voce nao colocou seu nome");
+	}
+
+
+	</script>
+	
+
+	<body>
+<script>
+seuNome('');
+</script>
+<a href="#" onclick="seuNome()">Aqui não existe um nome</a>
+<br />
+<a href="#" onclick="seuNome('Edson Gonçalves')"> Aqui existe um nome </a>
+</body>
+</html>

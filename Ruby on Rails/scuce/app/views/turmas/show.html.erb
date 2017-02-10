@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @turma.name %>
+</p>
+
+<p>
+  <strong>Numero de alunos:</strong>
+  <%= @turma.numeroalunos %>
+</p>
+
+<p>
+	<strong>Professor:<strong>
+	<%= @turma.professor.name %>	
+</p>	
+
+<p>
+	<strong>Curso:<strong>
+	<%= @turma.curso.name %>	
+</p>	
+<%= link_to 'Edit', edit_turma_path(@turma) %> |
+<%= link_to 'Back', turmas_path %>

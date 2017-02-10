@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa que:  
+• leia um número indeterminado de linhas contendo, cada uma, a idade de um indivíduo. A última linha, que não entrará nos cálculos, contém o valor da idade igual a zero;  • calcule e escreva a idade média deste grupo de indivíduos.  
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, cont = 0, somaidades = 0;
+            Console.WriteLine("Informe a sua idade:");
+            idade = Convert.ToInt32(Console.ReadLine());
+            while (idade!= 0)
+            {
+                somaidades += idade;
+                cont++;
+                Console.WriteLine("Informe a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+            }
+            if (cont != 0)
+            {
+                Console.WriteLine("A média das idades é " + (float) somaidades / cont);
+            }
+            Console.ReadKey();
+        }
+    }
+}

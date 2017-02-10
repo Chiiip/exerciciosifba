@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <h1><%= link_to "Agenda", root_path %> </h1>
+  <% if user_signed_in? %>
+  	<%= render 'layouts/user_navbar' %>
+  <% else %>
+  	<%= render 'layouts/visitor_navbar' %>
+  	<% end %>
+  <%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

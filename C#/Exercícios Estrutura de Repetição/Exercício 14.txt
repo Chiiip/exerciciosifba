@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Faça uma Programa que receba a idade, a altura e o peso de 15 pessoas. Calcule e imprima:  
+• a quantidade de pessoas com idade superior a 50 anos;  • a média das alturas das pessoas com idade entre 10 e 20 anos;  • a porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas analisadas. 
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int idade, quant50 = 0, contid = 0, contp40 = 0;
+            double altura, peso, somaalt = 0;
+            for (int cont = 1; cont<=5; cont++)
+            {
+                Console.WriteLine("Informe a sua idade:");
+                idade = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Informe a sua altura:");
+                altura = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Informe o seu peso:");
+                peso = Convert.ToDouble(Console.ReadLine());
+
+                if (idade > 50)
+                {
+                    quant50++;
+                }
+                if (idade>=10 && idade <= 20)
+                {
+                    somaalt += altura;
+                    contid++;
+                }
+
+                if (peso < 40)
+                {
+                    contp40++;
+                }
+            
+            }
+            Console.WriteLine("A quantidade de pessoas com idade superior a 50 anos é " + quant50);
+            Console.WriteLine("A média das alturas das pessoas com idade entre 10 e 20 anos é " + (float) somaalt/contid);
+            Console.WriteLine("A porcentagem de pessoas com menos de 40 quilos em relação ao total é " + (float)contp40 / 5 * 100 + "%");
+            Console.ReadKey();
+        }
+    }
+}

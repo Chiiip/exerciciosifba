@@ -1,0 +1,22 @@
+<table>
+ <% @users.each do |user| %>
+      <tr>
+        <td><%= user.fullname %></td>
+    </tr>
+      <tr>
+        <td><%= user.email%></td>
+          </tr>
+          	  <tr>
+        <td><%= user.password %></td>
+          </tr>
+          	  <tr>
+        <td><%= user.location %></td>
+  </tr>
+  	  <tr>
+  	  	<td>===============================================================</td>
+  	  	  </tr>
+
+<% end %>
+
+
+</table>

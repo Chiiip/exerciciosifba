@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/*
+
+ Escreva uma Programa que receba um conjunto de valores inteiros e positivos, calcule e imprima o maior e o menor valor do conjunto.  
+Para encerrar a entrada de dados, deve ser digitado o valor zero. Para valores negativos, deve ser enviada uma mensagem. Esses valores (zero e negativos) não entrarão nos cálculos.  
+
+*/
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num, flag = 0, maior = 0, menor = 0;
+            Console.WriteLine("Informe um número positivo:");
+            num = Convert.ToInt32(Console.ReadLine());
+            while(num!= 0)
+                {
+
+                if (num < 0) {
+                    Console.WriteLine("Digite um número positivo!");
+                }
+                else { 
+                    if (flag == 0)
+                {
+                    flag = 1;
+                    maior = num;
+                    menor = num;
+                }
+                    else
+                    {   
+                        if (num > maior)
+                        {
+                            maior = num;
+                        }
+                        if (num < menor)
+                        {
+                            menor = num;
+                        }
+                    }           
+                }
+                
+                Console.WriteLine("Informe um número:");
+                num = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("O maior número é " + maior + " e o menor número é " + menor);
+            Console.ReadKey();
+            }
+        }
+    }

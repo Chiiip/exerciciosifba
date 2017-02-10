@@ -1,0 +1,40 @@
+<h1>Listing turmas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Nome do Professor</th>
+      <th>Número de Alunos</th>
+      <th>Curso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turmas.each do |turma| %>
+      <tr>
+        <td><%= turma.name %></td>
+        <td><%= turma.professor.name %></td>
+        <td><%= turma.numeroalunos %> </td> 
+        <td><%= turma.curso.name %> </td>
+        <td><%= link_to 'Show', turma_path(turma) %></td>
+        <td><%= link_to 'Edit', edit_turma_path(turma) %></td>
+        <td><%= link_to 'Destroy', turma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h1>Pesquisa</th></h1>
+
+<%= form_tag('/buscar4') do %>
+<%= text_field_tag 'search' %>
+<%= submit_tag 'Pesquisar' %>
+    <% end %>
+
+
+
+<br>
+
+<%= link_to 'New Turma', new_turma_path %>

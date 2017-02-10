@@ -1,0 +1,54 @@
+<h1>Lista de Contatos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Birth</th>
+      <th>Email</th>
+      <th>Fone</th>
+      <th>Address</th>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.fone %></td>
+        <td><%= contact.address %></td>
+        <td><%= contact.obs %></td>
+        <td><%= link_to 'Show', contact %></td>
+        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+ <% end %>   
+
+
+
+
+
+
+
+
+  </tbody>
+</table>
+<h1>
+<th>Pesquisa</th></h1>
+
+<%= form_tag('/buscar2') do %>
+<%= text_field_tag 'search' %>
+<%= submit_tag 'Pesquisar' %>
+    <% end %>
+
+
+
+
+<br>
+
+<%= link_to 'New Contact', new_contact_path %>

@@ -1,0 +1,22 @@
+<table>
+ <% @alunos.each do |aluno| %>
+      <tr>
+        <td><%= aluno.name %></td>
+    </tr>
+      <tr>
+        <td><%= aluno.phone %></td>
+          </tr>
+                <tr>
+        <td><%= aluno.email %></td>
+          </tr>
+          	  <tr>
+          </tr>
+  	  <tr>
+  	  	<td>===============================================================</td>
+  	  	  </tr>
+
+<% end %>
+
+
+</table>
+<%= link_to 'Back', alunos_path %>

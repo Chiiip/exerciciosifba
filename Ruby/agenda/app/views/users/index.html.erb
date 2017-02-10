@@ -1,0 +1,44 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fullname</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Location</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.fullname %></td>
+        <td><%= user.email %></td>
+        <td><%= user.password %></td>
+        <td><%= user.location %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<h1>
+<th>Pesquisa</th></h1>
+
+<%= form_tag('/buscar3') do %>
+<%= text_field_tag 'search' %>
+<%= submit_tag 'Pesquisar' %>
+    <% end %>
+
+
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
