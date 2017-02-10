@@ -1,0 +1,28 @@
+
+package javaapplication4;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication4 {
+
+/*
+ Escreva um algoritmo que armazene cinco nomes em um vetor e depois possa ser digitado um número que corresponde a uma pessoa e imprima esse nome. 
+
+*/ 
+
+
+    public static void main(String[] args) {
+        String vetor[] = new String [5];
+                String escolha;
+                
+        
+        for (int cont = 0; cont<vetor.length; cont++){
+        vetor[cont] = JOptionPane.showInputDialog("Insira um nome");
+    }
+        escolha = JOptionPane.showInputDialog("Escolha o número do nome que você deseja consultar:");
+        int numero = Integer.parseInt(escolha);
+        JOptionPane.showMessageDialog(null, vetor[numero]);
+    }
+    
+}

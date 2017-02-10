@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Pedro Augusto
+ */
+public class JavaApplication3 {
+
+    /*
+
+Construa um algoritmo que preencha um vetor de 100 elementos inteiros, colocando 1 na posição correspondente a um número par e 0 a um número ímpar. 
+     */
+    public static void main(String[] args) {
+int vet[] = new int [100];
+
+for (int cont = 0; cont<vet.length; cont++){
+   if (cont % 2 == 1){
+   vet[cont] = 0;    
+   } 
+   else{
+       vet[cont] = 1;
+   }
+    
+}
+for (int cont = 0 ; cont<vet.length; cont++){
+    JOptionPane.showMessageDialog(null, "O valor dessa posição do vetor é " + vet[cont]);
+}
+   }
+    }
+    

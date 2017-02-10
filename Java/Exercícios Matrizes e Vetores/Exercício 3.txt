@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Pedro Augusto
+ */
+public class JavaApplication3 {
+
+    /*
+
+Crie um algoritmo que leia um vetor de 30 números inteiros e gere um segundo vetor cujas posições pares são o dobro do vetor original e as ímpares o triplo.
+
+
+     */
+    public static void main(String[] args) {
+int vet[] = new int [30];
+String nomevet[] = new String [30];
+for (int cont = 0; cont<vet.length; cont++){
+nomevet[cont] = JOptionPane.showInputDialog("Insira um número");
+vet[cont] = Integer.parseInt(nomevet[cont]);
+}
+
+for (int cont = 0; cont<vet.length; cont++){
+   if (cont % 2 == 1){
+   vet[cont] = vet[cont]*3;    
+   } 
+   else{
+       vet[cont] = vet[cont] * 2;
+   }
+    
+}
+for (int cont = 0 ; cont<vet.length; cont++){
+    JOptionPane.showMessageDialog(null, "O novo valor do vetor é " + vet[cont]);
+}
+   }
+    }
+    
+

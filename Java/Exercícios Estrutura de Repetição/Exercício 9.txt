@@ -1,0 +1,61 @@
+
+
+package javaapplication2;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication2 {
+
+/*
+
+Uma empresa decidiu fazer um levantamento em relação aos candidatos que se apresentarem para preenchimento de vagas no seu quadro de funcionários. Supondo que você seja o programador dessa empresa, faça uma Programa que leia para cada candidato a idade, o sexo (M ou F) e a experiência no serviço (S ou N). Para encerrar a entrada de dados, digite zero para a idade. Calcule e escreva:  
+• número de candidatos do sexo feminino; • número de candidatos do sexo masculino;  • a idade média dos homens que já têm experiência no serviço;  • a porcentagem dos homens com mais de 45 anos entre o total dos homens;  • número de mulheres com idade inferior a 35 anos e com experiência no serviço;  • a menor idade entre as mulheres que já têm experiência no serviço.  
+
+*/
+
+   
+    public static void main(String[] args) {
+   String idade, sexo, exp;
+   int nidade, nfem = 0, nmas = 0, toth = 0, hexp = 0, mhexp =0, nfem35 =0, menor = 0, h45 = 0, cont = 0;
+   idade = JOptionPane.showInputDialog("Insira a sua idade");
+   nidade = Integer.parseInt(idade);
+   while (nidade!=0){
+   sexo = JOptionPane.showInputDialog("Insira o seu sexo");
+   exp = JOptionPane.showInputDialog("Você tem experiência no serviço?");
+   if (sexo.equals("F"))
+   {
+       nfem++;
+       if (cont==0){
+           menor = nidade;
+           cont++;
+       }
+       else if (cont!=0 && nidade<menor){
+       menor = nidade;    
+       }
+       if (nidade<35 && exp.equals("Sim")){
+           nfem35++;
+       }
+   }   
+   if (sexo.equals("M")){
+       nmas++;
+       if (exp.equals("Sim")){
+           hexp++;
+           mhexp = mhexp + nidade;
+       }
+       if (nidade>45){
+           h45++;
+       }
+       
+   }
+   
+    idade = JOptionPane.showInputDialog("Insira a sua idade");
+   nidade = Integer.parseInt(idade);    
+   }
+   JOptionPane.showMessageDialog(null,"O número de candidatos do sexo feminino é " + nfem + "\n O número de candidatos do sexo masculino é " + nmas + "\n A idade da média dos homens que já tem experiência é " +  (float) mhexp/hexp);
+   JOptionPane.showMessageDialog(null,"A porcentagem de homens com mais de 45 anos entre os homens é " + (float) h45/nmas*100 + " %" + "\n O número de mulheres com idade inferior a 35 anos com experiência é " + nfem + "\n A menor idade entre as mulheres com experiência é " + menor);
+    }
+}
+
+
+    

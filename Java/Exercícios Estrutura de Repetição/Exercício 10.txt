@@ -1,0 +1,49 @@
+
+
+package javaapplication2;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication2 {
+
+
+/*
+Faça uma Programa que receba a idade e o peso de 15 pessoas. Calcule e imprima as médias dos pesos das pessoas da mesma faixa etária. As faixas etárias são: de 1 a 10 anos, de 11 a 20 anos, de 21 a 30 anos e maiores de 30 anos. 
+
+
+*/
+
+   
+    public static void main(String[] args) {
+   String idade, peso;
+   int nidade, npeso, medpeso1 = 0, medpeso2 = 0, medpeso3 = 0, medpeso4 = 0, cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0;
+        for (int cont = 1; cont<=5; cont++){
+            idade = JOptionPane.showInputDialog("Insira a sua idade");
+            peso = JOptionPane.showInputDialog("Insira o seu peso");
+            nidade = Integer.parseInt(idade);
+            npeso = Integer.parseInt(peso);
+            if (nidade>1 && nidade<=10){
+                cont1++;
+                medpeso1 = medpeso1 + npeso;
+            }      
+            else if (nidade>10 && nidade<=20){
+                cont2++;
+                medpeso2 = medpeso2 + npeso;
+            }
+            else if (nidade>20 && nidade<=30){
+                cont3++;
+                medpeso3 = medpeso3 + npeso;
+            }
+            else if (nidade>30){
+                cont4++;
+                medpeso4 = medpeso4 + npeso;
+            }
+   }
+        JOptionPane.showMessageDialog(null, "A média de peso das faixas etárias é: \n De 1 a 10 Anos - " + (float) medpeso1/cont1 + "\n De 11 a 20 Anos - " + (float) medpeso2/cont2 + "\n De 21 a 30 Anos - " + (float) medpeso3/cont3 + "\n De 30 Anos pra cima - " + (float) medpeso4/cont4);
+    }
+}
+
+    
+
+    

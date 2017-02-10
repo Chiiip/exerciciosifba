@@ -1,0 +1,56 @@
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+*
+* @author Pedro Augusto
+*/
+public class JavaApplication3 {
+
+/*
+
+
+Desenvolva um algoritmo que permita a leitura de um vetor de 30 números inteiros, e gere um segundo vetor com os mesmos dados, só que de maneira invertida, ou seja, o primeiro elemento ficará na última posição, o segundo na penúltima posição, e assim por diante. 
+
+
+*/
+public static void main(String[] args) {
+// TODO code application logic here
+
+
+
+int vetor [] = new int [30]; // declarando o primeiro vetor
+int vetor2[] = new int [30]; // declarando o segundo vetor
+String vetortexto = ""; // como ele vai ter que ler no JOPtionpáne, primeiro pego como string
+
+//preencher o primeiro vetor
+for(int cont = 0; cont<vetor.length; cont++){
+vetortexto = JOptionPane.showInputDialog("Informe o número a preencher o vetor");
+vetor[cont] = Integer.parseInt(vetortexto);
+}
+
+//invertendo o primeiro vetor
+for (int cont = 0; cont<30; cont++){
+vetor2[cont] = vetor[30-cont]; // nesse 30 - cont que tá o truque, aí ele vai sempre começar pelo máximo que nesse caso é 30, e depois ir descendo até a posição 0.
+
+}
+//exibindo os dois pra ver se o resultado deu certo
+//vetor 1
+String mensagem1 = ""; // exibindo tudo em uma só mensagem
+for(int cont = 0; cont<30; cont++){
+mensagem1 = mensagem1 + vetor[cont] + "\n";
+}
+JOptionPane.showMessageDialog(null,mensagem1);
+
+//vetor 2
+
+String mensagem2 = ""; // mesma coisa aqui
+for(int cont = 0; cont<30; cont++){
+mensagem2 = mensagem2 + vetor2[cont] + "\n";
+}
+JOptionPane.showMessageDialog(null,mensagem2);
+
+}
+
+}

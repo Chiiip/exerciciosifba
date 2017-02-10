@@ -1,0 +1,49 @@
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication1 {
+
+/*  Escreva um Programa que receba a idade de 15 pessoas, calcule e imprima: a quantidade de pessoas em cada faixa etária; a porcentagem de cada faixa etária em relação ao total de pessoas.  
+As faixas etárias são:    
+1 a 15 anos   
+16 a 30 anos   
+31 a 45 anos   
+46 a 60 anos   
+> = 61 anos  
+
+*/
+
+   
+    public static void main(String[] args) {
+   String idade;
+   int nidade, cont = 1;
+  int i15 = 0,i30 = 0,i45 = 0,i60 = 0,i61 = 0;
+   while (cont<=15){
+   idade = JOptionPane.showInputDialog("Insira a sua idade");   
+   nidade = Integer.parseInt(idade);
+   if (nidade>=1 && nidade<=15){
+    i15++;   
+   }
+   else if (nidade>15 && nidade<=30){
+       i30++;
+   }
+   else if (nidade>30 && nidade<=45){
+       i45++;
+   }
+   else if (nidade>45 && nidade<=60){
+       i60++;
+   }
+   else
+   { i61++;}
+   
+   cont++;
+   }
+   JOptionPane.showMessageDialog(null, "A quantidade de pessoas em cada faixa etária é: \n 1 a 15 anos - " + i15 + "\n 16 a 30 anos - " + i30 + "\n 31 a 45 anos - " + i45 + "\n 46 a 60 anos - " +i60 + "\n Mais de 60 anos - " + i61);
+  JOptionPane.showMessageDialog(null, "A porcentagem de cada faixa etária em relação ao total é: \n 1 a 15 anos - " + (float) i15/15*100 + "\n 16 a 30 anos - " + (float) i30/15*100 + "\n 31 a 45 anos - " + (float)i45/15*100 + "\n 46 a 60 anos - " +(float)i60/15*100 + "\n Mais de 60 anos - " + (float)i61/15*100);
+    }
+}
+
+    

@@ -1,0 +1,34 @@
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+/*
+Escreva uma Programa que receba um número inteiro e verifique se o número fornecido é primo ou não. Imprima mensagem de número primo ou número não primo. 
+
+Observação: um número é primo se este é divisível apenas pelo número um e por ele mesmo. 
+
+*/
+
+public class JavaApplication1 {
+
+   
+    public static void main(String[] args) {
+String num;
+int vnum, cont = 1, primo = 0;
+num = JOptionPane.showInputDialog("Insira um número para verificar se é primo ou não");
+vnum = Integer.parseInt(num);
+while (cont<=vnum){
+if (vnum%cont == 0){
+    primo++;
+}    
+cont++;
+}
+if (primo <=2){
+    JOptionPane.showMessageDialog(null, "O número é primo");
+}
+else{
+    JOptionPane.showMessageDialog(null,"O número não é primo");
+}
+    }
+}

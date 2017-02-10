@@ -1,0 +1,70 @@
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Pedro Augusto
+ */
+public class JavaApplication1 {
+
+/*
+
+Foi feita uma pesquisa de audiência de canal de TV em várias casas de uma certa cidade, em um determinado dia. Para cada casa visitada foi fornecido o número do canal (4, 5, 7, 12) e o número de pessoas que estavam assistindo a ele naquela casa. Se a televisão estivesse desligada, nada seria anotado, ou seja, esta casa não entraria na pesquisa. Faça uma Programa que:  
+leia um número indeterminado de dados, isto é, o número do canal e o número de pessoas que estavam assistindo;  
+calcule e imprima a porcentagem de audiência em cada canal. Para encerrar a entrada de dados, digite o número do canal zero.
+
+
+*/
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+   String canal, espec4, espec5, espec7, espec12;
+   int cont4= 0, cont5= 0, cont7= 0, cont12= 0;
+   int n4, n5, n7, n12;
+   int soma4= 0, soma5= 0, soma7 = 0, soma12 =0;
+  int totalcanal;
+    canal = JOptionPane.showInputDialog("Informe o número do canal: 4, 5, 7 ou 12, 0 para cancelar a pesquisa e 1 para TV desligada");
+    int ncanal = Integer.parseInt(canal);
+    if(ncanal!= 0){
+   while (ncanal!= 0){
+      
+           
+       if (ncanal == 4){
+           espec4 = JOptionPane.showInputDialog("Informe o número de pessoas assistindo ao canal");
+           n4 = Integer.parseInt(espec4);
+           soma4 = soma4 + n4;
+       }
+       
+       
+      else if(ncanal == 5){
+           espec5 = JOptionPane.showInputDialog("Informe o número de pessoas assistindo ao canal");
+           n5 = Integer.parseInt(espec5);
+           soma5 = soma5 + n5;
+       }
+      else if(ncanal == 7){
+           espec7 = JOptionPane.showInputDialog("Informe o número de pessoas assistindo ao canal");
+           n7 = Integer.parseInt(espec7);
+           soma7 = soma7 + n7;
+       }
+      else if(ncanal == 12){
+           espec12 = JOptionPane.showInputDialog("Informe o número de pessoas assistindo ao canal");
+           n12 = Integer.parseInt(espec12);
+           soma12 = soma12 + n12;
+
+   }
+       canal = JOptionPane.showInputDialog("Informe o número do canal: 4, 5, 7 ou 12, 0 para cancelar a pesquisa e 1 para TV desligada");
+     ncanal = Integer.parseInt(canal);
+   }    
+    }
+    totalcanal = soma4 + soma5 + soma12 + soma7;
+    JOptionPane.showMessageDialog(null, "A porcentagem de audiência do canal 4 é " + (float) soma4/totalcanal*100);
+    JOptionPane.showMessageDialog(null, "A porcentagem de audiência do canal 5 é " + (float) soma5/totalcanal*100);
+    JOptionPane.showMessageDialog(null, "A porcentagem de audiência do canal 7 é " + (float) soma7/totalcanal*100);
+    JOptionPane.showMessageDialog(null, "A porcentagem de audiência do canal 12 é " + (float) soma12/totalcanal*100);
+  
+    }
+}

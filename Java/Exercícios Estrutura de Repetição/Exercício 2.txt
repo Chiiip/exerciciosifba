@@ -1,0 +1,45 @@
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+/*
+Escreva uma Programa que receba um conjunto de valores inteiros e positivos, calcule e imprima o maior e o menor valor do conjunto.  
+
+Para encerrar a entrada de dados, deve ser digitado o valor zero. Para valores negativos, deve ser enviada uma mensagem. Esses valores (zero e negativos) não entrarão nos cálculos. 
+*/
+
+public class JavaApplication1 {
+
+   
+    public static void main(String[] args) {
+   String numero;
+   int vnum = 1, maior = 0, menor = 0, cont = 0;
+   
+   while (vnum!=0){
+  numero = JOptionPane.showInputDialog("Insira um número inteiro e positivo");
+  vnum = Integer.parseInt(numero);
+  if (vnum<0){
+      JOptionPane.showMessageDialog(null,"Esse valor não é positivo, insira outro!");
+  }
+  else if (vnum>0){
+  if (cont==0){
+      maior = vnum;
+      menor = vnum;
+  cont++;
+  }
+  else {
+      if (vnum > maior){
+          maior = vnum;
+      }
+      else if (vnum < menor){
+          menor = vnum;
+      }
+  }    
+  }
+   }
+   JOptionPane.showMessageDialog(null, "O maior número é " + maior + "\n O menor número é " + menor);
+    }
+}
+
+    

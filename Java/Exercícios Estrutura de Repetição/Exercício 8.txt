@@ -1,0 +1,52 @@
+
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication1 {
+
+
+/*
+
+Tem-se um conjunto de dados contendo a altura e o sexo (M ou F) de 15 pessoas. Faça uma Programa que calcule e escreva:  
+• a maior e a menor altura do grupo;  • a média de altura das mulheres;  • número de homens. 
+
+*/
+
+   
+    public static void main(String[] args) {
+ String sexo, idade;
+ int nidade, mediam = 0, maior = 0, menor = 0, nhomem = 0;      //Só inicializei a variável menor porque de um jeito ou de outro, eu vou alterar o valor dela, então não ocorrerá erro      
+for (int cont = 0; cont<=14; cont++){
+sexo = JOptionPane.showInputDialog("Informe o seu sexo");
+idade = JOptionPane.showInputDialog("Informe a sua altura");
+nidade = Integer.parseInt(idade);
+if (sexo.equals("M") ){
+nhomem++;    
+}
+else {
+    mediam = mediam+nidade;
+}
+if (cont==0){
+    maior = nidade;
+    menor = nidade;
+}
+ else if(cont>0){   
+    if (nidade>maior){
+        maior = nidade;   
+    }
+    if (nidade>menor){
+     menor = nidade;   
+    } 
+    
+ }
+}
+    JOptionPane.showMessageDialog(null,"A maior altura é " + maior + "\n A menor altura é " + menor);
+JOptionPane.showMessageDialog(null,"A média de altura das mulheres é " + (float) mediam/(15-nhomem) + "\n O número de homens é " + nhomem);
+    }
+}
+
+
+    

@@ -1,0 +1,63 @@
+
+
+package javaapplication2;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication2 {
+
+/*
+Em uma eleição presidencial, existem quatro candidatos. Os votos são informados através de código. Os códigos utilizados são:  
+1,2,3,4 votos para os respectivos candidatos;  5 voto nulo;  6 voto em branco.  
+Escreva uma Programa que calcule e imprima:  
+• total de votos para cada candidato;  • total de votos nulos;  • total de votos em branco;  • porcentagem de votos nulos sobre o total de votos;  • porcentagem de votos em branco sobre o total de votos.  
+Para finalizar o conjunto de votos, tem-se o valor zero. 
+
+
+*/
+
+   
+    public static void main(String[] args) {
+   int cd1= 0, cd2= 0, cd3= 0, cd4 = 0, nulo= 0, branc= 0, total= 0, nvoto = 1;
+   String voto;
+   while(nvoto!=0){
+        voto = JOptionPane.showInputDialog("Insira o número referente ao seu voto\n 1 para o Candidato 1 \n 2 para o Candidato 2\n 3 para o Candidato 3\n 4 para o Candidato 4 \n 5 para Branco e 6 para Nulo");
+   nvoto = Integer.parseInt(voto);   
+  if(nvoto!=0){
+      total++;
+  
+       switch(nvoto){
+           case 1:{
+               cd1++;
+               break;
+           }
+           case 2:{
+               cd2++;
+               break;
+           }
+           case 3:{
+               cd3++;
+               break;
+           }
+           case 4:{
+               cd4++;
+               break;
+           }
+           case 5:{
+               nulo++;
+               break;
+           }
+           case 6:{
+               branc++;
+           }   
+       }
+  }
+   }
+   JOptionPane.showMessageDialog(null,"O total de votos é: \n" + cd1 + " votos para o Candidato 1 \n" + cd2 + " votos para o Candidato 2 \n" + cd3 + " votos para o Candidato 3 \n" + cd4 + " votos para o Candidato 4 \n Votos Nulos - " + nulo + "\n Votos Brancos -  " + branc);
+   JOptionPane.showMessageDialog(null,"A porcentagem de votos em relação ao total é: \n Votos Nulos - " + (float) nulo/total*100 + "\n Votos Brancos -  " + (float) branc/total*100); 
+    }
+}
+
+
+    

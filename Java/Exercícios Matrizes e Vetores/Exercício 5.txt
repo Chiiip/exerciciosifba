@@ -1,0 +1,43 @@
+
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+*
+* @author Pedro Augusto
+*/
+public class JavaApplication3 {
+
+/*
+
+Elabore um algoritmo que leia uma série de 50 notas, e calcule quantas são 10% acima da média e quantas são 10% abaixo.
+
+
+*/
+public static void main(String[] args) {
+
+String nomevet = "";
+int vet[] = new int [50];
+int medianotas = 0, abaixo = 0, acima = 0;
+
+for (int cont = 0; cont<vet.length; cont++){
+    nomevet = JOptionPane.showInputDialog("Insira a sua nota");
+    vet[cont] = Integer.parseInt(nomevet);
+    medianotas = medianotas + vet[cont];
+}
+float mediabaixo = medianotas /vet.length - medianotas/vet.length*0.1;
+medianotas = medianotas/vet.length + medianotas/vet.length*0.1;
+
+cont = 0; cont<vet.length; cont++){
+if (vet[cont] > medianotas){
+acima++;
+}
+else if (vet[cont < mediabaixo){
+abaixo++;
+}
+}
+JOptionPane.showMessageDialog(null,"O número de notas acima da média é " + acima + "\n O número de notas abaixo da média é " + abaixo);
+}
+
+}

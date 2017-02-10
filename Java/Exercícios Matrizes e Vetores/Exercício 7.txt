@@ -1,0 +1,34 @@
+
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+*
+* @author Pedro Augusto
+*/
+public class JavaApplication3 {
+
+/*
+ Construa um algoritmo para gerenciar a venda de ingressos das poltronas numeradas de um teatro que tem 100 lugares. Para cada nova reserva deve ser verificado se o assento se encontra disponível. 
+
+*/
+public static void main(String[] args) {
+
+String leitura;
+int nleitura;
+int vet[] = new int [100];
+nleitura = 0;
+while (nleitura != -1){
+leitura = JOptionPane.showInputDialog("Informe o número do lugar que você quer reservar:");
+nleitura = Integer.parseInt(leitura);
+if (vet[nleitura] == 1){
+   JOptionPane.showMessageDialog(null,"Lugar já está reservado, escolha outro lugar"); 
+}
+else{
+    JOptionPane.showMessageDialog(null,"Lugar reservado com sucessso.");
+    vet[nleitura] = 1;
+}
+}
+}
+}

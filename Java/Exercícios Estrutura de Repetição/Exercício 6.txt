@@ -1,0 +1,33 @@
+
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication1 {
+
+/*
+Escreva uma Programa para calcular N! (fatorial de N), sendo que o valor inteiro de N é fornecido pelo usuário.  
+Sabe-se que: N! = 1 * 2 * 3 *... * (N-1) * N;                       0! = 1, por definição. 
+
+
+*/
+   
+    public static void main(String[] args) {
+  String numero;
+  int num, fatorial = 1, cont;
+  numero = JOptionPane.showInputDialog("Insira o valor do número a ser calculado o fatorial:");
+  num = Integer.parseInt(numero);
+  cont = num;
+  while(cont>=1){
+      if (cont>1){
+      fatorial = fatorial * cont*(cont-1);
+      }
+      cont = cont - 2;
+    }
+    JOptionPane.showMessageDialog(null,"O valor do fatorial é " + fatorial);    }
+    
+}
+
+    

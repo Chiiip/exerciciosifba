@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Pedro Augusto
+ */
+public class JavaApplication3 {
+
+    /*
+     
+	Elabore um algoritmo que leia, some e imprima o resultado da soma entre dois vetores inteiros de 50 posições. A soma deve ser feita somando-se os elementos que se encontram na mesma posição.
+
+     */
+    public static void main(String[] args) {
+  int vet1 [] = new int [50];
+  int vet2 [] = new int [50];
+  String nome1[] = new String [50];
+  String nome2[] = new String [50];
+  
+  for (int cont = 0; cont<vet1.length; cont++){
+      nome1[cont] = JOptionPane.showInputDialog("Insira um número para preencher o primeiro vetor");
+      vet1[cont] = Integer.parseInt(nome1[cont]);
+  }
+  for (int cont = 0; cont<vet2.length; cont++)
+  {
+      nome2[cont] = JOptionPane.showInputDialog("Insira um número para preencher o segundo vetor");
+      vet2[cont] = Integer.parseInt(nome2[cont]);
+  }      
+  
+  for (int cont = 0; cont<vet1.length; cont++){
+      JOptionPane.showMessageDialog(null, "A soma dos vetores número " + (cont+1) + " é igual a " + (vet1[cont] + vet2[cont]));
+  }
+   }
+    }
+    

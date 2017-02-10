@@ -1,0 +1,67 @@
+
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+/*
+
+Uma certa firma fez uma pesquisa de mercado para saber se as pessoas gostaram ou não de um novo produto lançado. Para isso forneceu o sexo do entrevistado e sua resposta (sim ou não). Sabendo que foram entrevistadas 10 pessoas, faça uma Programa que calcule e imprima:  
+• número de pessoas que responderam sim;  • número de pessoas que responderam não;  • número de mulheres que responderam sim;  • a porcentagem de homens que responderam não entre todos os homens analisados.  
+
+
+*/
+
+package javaapplication2;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication2 {
+
+   
+    public static void main(String[] args) {
+   int cd1= 0, cd2= 0, cd3= 0, cd4 = 0, nulo= 0, branc= 0, total= 0, nvoto = 1;
+   String voto;
+   while(nvoto!=0){
+        voto = JOptionPane.showInputDialog("Insira o número referente ao seu voto\n 1 para o Candidato 1 \n 2 para o Candidato 2\n 3 para o Candidato 3\n 4 para o Candidato 4 \n 5 para Branco e 6 para Nulo");
+   nvoto = Integer.parseInt(voto);   
+  if(nvoto!=0){
+      total++;
+  
+       switch(nvoto){
+           case 1:{
+               cd1++;
+               break;
+           }
+           case 2:{
+               cd2++;
+               break;
+           }
+           case 3:{
+               cd3++;
+               break;
+           }
+           case 4:{
+               cd4++;
+               break;
+           }
+           case 5:{
+               nulo++;
+               break;
+           }
+           case 6:{
+               branc++;
+           }   
+       }
+  }
+   }
+   JOptionPane.showMessageDialog(null,"O total de votos é: \n" + cd1 + " votos para o Candidato 1 \n" + cd2 + " votos para o Candidato 2 \n" + cd3 + " votos para o Candidato 3 \n" + cd4 + " votos para o Candidato 4 \n Votos Nulos - " + nulo + "\n Votos Brancos -  " + branc);
+   
+    }
+}
+
+
+    
+
+    

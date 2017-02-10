@@ -1,0 +1,37 @@
+package javaapplication3;
+
+import javax.swing.JOptionPane;
+
+/**
+*
+* @author Pedro Augusto
+*/
+public class JavaApplication3 {
+
+/*
+
+Elabore um algoritmo que leia 10 números e escreva primeiro os pares e depois os ímpares.
+
+*/
+public static void main(String[] args) {
+
+String nomevet = "";
+int vet[] = new int [10];
+
+for(int cont = 0; cont<vet.length; cont++){
+    
+nomevet = JOptionPane.showInputDialog("Insira um número");
+vet[cont] = Integer.parseInt(nomevet);
+}
+
+for(int cont = 0; cont<vet.length; cont++){
+    if (vet[cont] % 2 == 0){
+        JOptionPane.showMessageDialog(null,vet[cont]);
+    }}
+    for(int cont = 0; cont<vet.length; cont++){
+    if (vet[cont] % 2 == 1){
+        JOptionPane.showMessageDialog(null,vet[cont]);
+    }
+}
+}
+}

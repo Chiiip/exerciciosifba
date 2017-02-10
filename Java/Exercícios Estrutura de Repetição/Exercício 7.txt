@@ -1,0 +1,33 @@
+
+
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+
+public class JavaApplication1 {
+
+/*
+Escreva uma Programa que:  
+• leia um número indeterminado de linhas contendo, cada uma, a idade de um indivíduo. A última linha, que não entrará nos cálculos, contém o valor da idade igual a zero;  • calcule e escreva a idade média deste grupo de indivíduos.  
+
+*/
+
+   
+    public static void main(String[] args) {
+  int nidade, total = 0, cont = 0; 
+        String idade = JOptionPane.showInputDialog("Insira a sua idade");
+        nidade = Integer.parseInt(idade);
+        while (nidade!=0){
+            cont++;
+        total = total + nidade;
+        idade = JOptionPane.showInputDialog("Insira a sua idade");
+        nidade = Integer.parseInt(idade);
+    }
+    JOptionPane.showMessageDialog(null,"A média das idades é " + (float) total/cont);
+    }
+    
+    
+}
+
+    
